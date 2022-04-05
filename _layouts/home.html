@@ -4,12 +4,12 @@ layout: default
 
 <div class="row">
     {% for category in site.categories %}
-    <div class="col-6 my-3">
+    <div class="col-12 my-3">
         <h2 class="mb-3">{{ category[0] }}</h2>
 
         <div class="row mt-2">
             {% for tag in site.tags %}
-            <div class="col-6 py-2">
+            <div class="col-12 col-md-6 col-lg-6 py-2">
                 <h3 class="fs-6 fw-bold mt-2">{{ tag[0] }}</h3>
 
                 {% assign posts = site.posts | where: "category", category[0] | where: "tag", tag[0] %}
