@@ -2,11 +2,18 @@
 layout: default
 ---
 
+<hr>
+
 <header class="my-3">
-    <h2>{{ page.title }}</h2>
-    <p>{{ page.categories[0] }} / {{ page.categories[1] }}</p>
+    <h2 class="display-5">{{ page.title }}</h2>
 </header>
 
-<article>
+<article style="max-width: 800px;">
     {{ content }}
 </article>
+
+<div id="vk_comments"></div>
+<script type="text/javascript">
+    VK.Widgets.Comments("vk_comments", {limit: 10, attach: false});
+</script>
+
