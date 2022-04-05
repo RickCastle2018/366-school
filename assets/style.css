@@ -2,9 +2,9 @@
     max-width: 1000px;
 }
 
-body {
+body,
+.likely__button {
     font-family: 'Inter', sans-serif !important;
-    font-size: 1.2em;
 }
 
 h1,
@@ -19,4 +19,8 @@ a {
 
 img {
     max-width: 100%;
+}
+
+#vk_comments {
+    margin-top: 3em;
 }

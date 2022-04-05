@@ -10,6 +10,25 @@ layout: default
 
 <article style="max-width: 800px;">
     {{ content }}
+
+    <div class="d-flex justify-content-evenly mx-3 mt-5">
+        {% if page.previous.url %}
+        <div class="d-block p-3" >
+            <b>Назад:</b>
+            <a href="{{page.previous.url}}">
+                {{page.previous.title}}
+            </a>
+        </div>
+        {% endif %}
+        {% if page.next.url %}
+        <div class="d-block p-3" >
+            <b>Дальше: </b>
+            <a href="{{page.next.url}}">
+                {{page.next.title}}
+            </a>
+        </div>
+        {% endif %}
+    </div>
 </article>
 
 <div id="vk_comments"></div>
