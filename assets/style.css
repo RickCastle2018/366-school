@@ -4,21 +4,15 @@
 
 body {
     font-family: 'Inter', sans-serif !important;
+    font-size: 1.2em;
 }
 
 h1,
 h2,
 h2 {
-    font-family: 'Prosto One', cursive;
+    font-family: 'Playfair Display', serif;
 }
 
 a {
-    text-decoration:none;
-    color: #03eeee;
-    transition: 0.2s;
-}
-
-a:hover {
-    transition: 0.2s;
-    color: #21a9ad;
+    text-decoration: none;
 }
