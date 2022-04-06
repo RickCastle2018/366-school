@@ -24,3 +24,8 @@ img {
 #vk_comments {
     margin-top: 3em;
 }
+
+table {
+    overflow-x: auto;
+    display: block;
+}
